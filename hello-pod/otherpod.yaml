@@ -1,0 +1,19 @@
+---
+apiversion: v1
+kind: Pod
+metadata: 
+  name: otherpod
+spec:
+  containers:
+    - name: httpd
+      image: httpd
+      ports:
+        - containerPort: 80
+    - name: mysql
+      image: mysql:5.7
+      ports:
+        - containerPort: 3036
+      env:
+        - name: MYSQL_ROOT_PASSWORD
+          vamue: 'qtadmin@123'
+    
