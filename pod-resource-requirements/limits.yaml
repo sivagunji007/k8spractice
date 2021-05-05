@@ -5,7 +5,7 @@ metadata:
   name: resource-requirements-demo
 spec: 
   containers:
-    - name: container with limits
+    - name: container-with-limits
       image: nginx
       ports: 
         - containerPort: 80
