@@ -5,15 +5,14 @@ metadata:
   name: other-pod
 spec: 
   containers:
-    - name: httpd
+    - name: httpd1
       image: httpd
       ports:
         - containerPort: 80
-    - name: mysql
+    - name: mysql1
       image: mysql:5.7
       ports:
         - containerPort: 3306
       env:
         - name: MYSQL_ROOT_PASSWORD
           value: 'qtadmin@123'
-    

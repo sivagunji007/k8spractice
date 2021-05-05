@@ -6,6 +6,6 @@ metadata:
 spec:
   containers:
     - image: jenkins
-      name: jenkinscont
+      name: jenkinscont1
       ports:
         - containerPort: 8080
