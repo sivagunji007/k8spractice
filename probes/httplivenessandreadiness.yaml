@@ -4,7 +4,7 @@ kind: Pod
 metadata:
   name: http-probe
 spec:
-  conatiners:
+  containers:
     - name: http-server
       iamge: httpd:latest
       ports:
