@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
     - name: http-server
-      iamge: httpd:latest
+      image: httpd:latest
       ports:
         - containerPort: 80
           protocol: TCP
