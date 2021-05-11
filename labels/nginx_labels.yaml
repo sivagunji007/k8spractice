@@ -10,7 +10,7 @@ metadata:
 spec: 
   containers: 
     - name: nginx-container
-      iamge: nginx:latest
+      image: nginx:latest
       ports:
         - containerPort: 80
           protocol: TCP
