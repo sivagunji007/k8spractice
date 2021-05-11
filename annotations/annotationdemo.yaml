@@ -1,0 +1,19 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: annotationdemo1
+  labels:
+    environment: qa
+    team: infra-ops
+    project: qt-elearn
+  annotations:
+    commit-id: 2ef2861d9214870374a4f23c1f3a94d453c4e7f1
+    jira-issue: "https://google.com"
+spec: 
+  containers: 
+    - name: jenkins-container
+      image: jenkins/jenkins
+      ports:
+        - containerPort: 8080
+          protocol: TCP
