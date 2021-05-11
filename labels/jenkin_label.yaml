@@ -9,7 +9,7 @@ metadata:
     project: qt-elearn
 spec: 
   containers: 
-    - name: jenkins_conatiner
+    - name: jenkins_container
       image: jenkins/jenkins
       ports:
         - containerPort: 8080
