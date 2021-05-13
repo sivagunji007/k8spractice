@@ -9,7 +9,7 @@ spec:
   replicas: 3
   minReadySeconds: 20
   selector:
-    matchlabels:
+    matchLabels:
       app: jenkins
       environment: production
   strategy:
