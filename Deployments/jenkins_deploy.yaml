@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: jenkins-deployment
   labels:
-    app:jenkins
+    app: jenkins
 spec:
   replicas: 3
   minReadySeconds: 20
@@ -15,16 +15,16 @@ spec:
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxSurge : 25%
+      maxSurge: 25%
       maxUnavailable: 25%
   template:
     metadata:
-      labels: 
+      labels:
         app: jenkins
         environment: production
         version: "1.6"
     spec:
-      containers: 
+      containers:
         - name: jenkins-container
           image: jenkins:1.651.1
           ports:
