@@ -22,7 +22,7 @@ spec:
       labels:
         app: jenkins
         environment: production
-        version: "2.x"
+        version: "2.60"
     spec:
       containers:
         - name: jenkins-container
