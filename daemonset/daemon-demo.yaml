@@ -22,5 +22,5 @@ spec:
           args:
             - /bin/sh
             - -c
-            - sleep 1d
+            - sleep 1d 
       
