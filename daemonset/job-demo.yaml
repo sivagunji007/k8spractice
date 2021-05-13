@@ -10,11 +10,11 @@ spec:
         app: job-demo
     spec:
       containers:
-        - name: job-demo
+        - name: dummy-job
           image: alpine
           args:
             - /bin/sh
             - -c
             - sleep 2m
-    restartPolicy: OnFailure
+      restartPolicy: OnFailure
           
