@@ -30,5 +30,5 @@ spec:
             - containerPort: 80
               protocol: TCP
           env
-            - name: MYSQL_ROOT_PASSWORD
+            - name: 'MYSQL_ROOT_PASSWORD'
               value: 'qtadmin@123'
