@@ -11,7 +11,7 @@ spec:
   selector:
     matchLabels:
       app: db
-  strategy: 
+  strategy:
     type: RollingUpdate
     rollingUpdate:
       maxSurge: 50%
@@ -26,21 +26,21 @@ spec:
         - name: postgres-container
           env: 
             - name: POSTGRES_PASSWORD
-              value: India@123
+              value: india@123
           image: postgres:13
           ports:
             - containerPort: 5432
               protocol: TCP
 
 ---
-apiVersion:
-kind:
+apiVersion: v1
+kind: Service
 metadata:
   name: db-service
 spec:
-  type: ClusterIp
+  type: ClusterIP
   selector:
-    app:db
+    app: db
   ports:
     - port: 5432
       targetPort: 5432
